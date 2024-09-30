@@ -1,0 +1,166 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.headerleft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.box1,.box2,.box3{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid palevioletred;
+    padding: 30px;
+    align-items: center;
+    height: 200px;
+    box-shadow: 0px 1px 2px  black;
+}
+
+.box1 h2{
+    color: darkviolet;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 10px;
+}
+.box1 p{
+    font-size: 23px;
+    margin: 10px;
+}
+.box1 span{
+    color: grey;
+}
+
+
+.box2 h2{
+    color: orangered;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 10px;
+}
+.box2 p{
+    font-size: 23px;
+    margin: 10px;
+}
+.box2 span{
+    color: grey;
+    
+}
+
+
+.box3 h2{
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin: 10px;
+}
+.box3 p{
+    font-size: 23px;
+    margin: 10px;
+}
+.box3 span{
+    color: grey;
+        
+}
+
+
+.headerright{
+    display: flex;
+    flex-direction: column;
+}
+.headrrightbox{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+   border: 1px solid palevioletred;
+   box-shadow: 0px 1px 2px  black;
+   height: 300px;
+}
+.headerright h1{
+    font-weight: 300;;
+    font-size: 25px;  
+}
+.headerright h4{
+    font-size: 20px;
+}
+.revenue{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+.revenue p span{
+    display: flex;
+    flex-direction: column;
+}
+.revenue p{
+    gap: 30px;
+}
+.headrrightbox h5{
+    width: 300px;
+    font-size: 11px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+@media (max-width:1330px) {
+    .header{
+        flex-direction: column;
+        gap: 29px;
+    }
+    .headerleft{
+        width: 100%;
+    }
+    .headerright{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .revenue{
+        justify-content: center;
+        align-items: center;
+    }
+   
+    
+}
+
+
+@media (max-width:726px) {
+    .header{
+        flex-direction: column-reverse;
+        gap: 29px;
+    }
+    .headerleft{
+       flex-direction: column;
+    }
+    .box1,.box2,.box3{
+        width: 100%;
+    }
+    .headrrightbox{
+        width: 100%;
+    }
+    .headrrightbox h5{
+        width: 100%;
+        max-height: 300px;
+    }
+    
+    
+}
+
+
+@media (max-width:394px) {
+   
+    .headrrightbox{
+        width: 100%;
+    }
+    .headrrightbox h5{
+        width: 100%;
+        font-size: 8px;
+
+    }
+    
+    
+}

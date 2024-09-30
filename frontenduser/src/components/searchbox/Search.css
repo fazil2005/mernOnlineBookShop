@@ -1,0 +1,29 @@
+.search{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+ 
+}
+
+.searchbox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.searchbox input{
+    width: 60%;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid lightgray;
+    outline: none;
+    background-color: #ebebeb;
+}
+.searchbox button{
+    width: 100px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: black;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}

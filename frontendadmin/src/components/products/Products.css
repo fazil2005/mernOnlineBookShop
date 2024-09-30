@@ -1,0 +1,159 @@
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    place-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+.productslist{
+    border: 1px solid palevioletred;
+   box-shadow: 0px 1px 2px  black;
+    width: 180px;
+    text-align: center;
+  height: 310px;
+  font-weight: lighter;
+  border-radius: 0px;
+  
+ 
+  
+
+}
+.productslist img{
+    width: 176px;
+    height: 180px; 
+    object-fit: fill;
+    border-radius: 0px;
+}
+.productslist h1{
+    font-size: 12px;
+    text-align: center;
+    margin: 5px 0px;
+    font-weight: 600;
+   
+}
+.productslist p{
+    font-size: 7.5px;
+    color:black;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.productslist span{
+    width: 100%;
+   font-weight: 500;
+    
+}
+.product-edit-delete{
+    display: flex;
+    justify-content: space-between;
+}
+.product-edit-delete button{
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+   
+    
+}
+
+
+.model{
+    width:90%;
+    height: 70vh;
+    top:10%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    background-color: rgba(36, 16, 16, 0.363);
+    border-radius: 8px;
+    border: 1px solid palevioletred;
+}
+.model h1{
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+.model-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.model-content input{
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 20px 0px 0px 20px;
+    border: 1px solid palevioletred;
+    outline: none;
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.model-content button{
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid palevioletred;
+    width: 100%;
+}
+.model-content button:hover{
+    background-color: black;
+}
+.cross{
+    text-align: right;
+    margin-top: -400px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.cross p{
+    font-size: 25px;
+    color: black;
+
+}
+
+
+
+
+
+
+@media (max-width:930px) {
+    .products{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+
+@media (max-width:718px) {
+    .products{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+
+
+@media (max-width:506px) {
+    .products{
+        grid-template-columns: 1fr  ;
+    }
+    .productslist{
+        width: 80%;
+        height: 390px;
+    }
+    .productslist img{
+        object-fit: fill;
+        width: 100%;
+        height: 250px;
+    
+    }
+   
+    
+}

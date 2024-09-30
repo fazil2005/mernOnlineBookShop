@@ -1,0 +1,108 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbarleft{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fabar{
+    display: none;
+    color: grey;
+}
+.navbarleft img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.link-tags{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    text-transform: uppercase;
+    color: palevioletred;
+}
+
+.link-tags li{
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.link-tags li hr{
+    height: 3px;
+    background-color: grey;
+    padding: 1px;
+}
+
+.loginbutton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+   
+}
+
+.loginbutton button{
+    background-color: rgba(0, 128, 0, 0.5);
+    color: black;
+    border: 1px solid palevioletred;
+    padding: 10px ;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.loginbutton button:active{
+    background-color: green;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .link-tags{
+     position: absolute;
+     left: -55%;
+     flex-direction: column;
+     top: 15%;
+     height: 100%;
+     
+    
+    }
+    .fabar {
+        display: block;
+    }
+    .navbarleft img{
+        display: none;
+    }
+    .navbar{
+        margin-top: 20px;
+    }
+    .link-tags.active{
+        left: 10%;
+    }
+    .link-tags li hr{
+        background-color: white;
+        height: 0px;
+    }
+  
+    
+}

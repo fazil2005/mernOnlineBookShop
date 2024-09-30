@@ -1,0 +1,29 @@
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 50px;
+}
+
+.privacy h2{
+   font-weight: 300;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.privacy p{
+    color: grey;
+    margin: 10px;
+    font-weight: 200;
+}
+.contacticons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+@media (max-width:968px) {
+    .privacy{
+        flex-direction: column;
+    }
+    
+}
